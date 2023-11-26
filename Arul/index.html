@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <title>Jeopardy</title>
+</head>
+<body>
+  <div class="app">
+
+    <!-- Top section -->
+    <header class="top-header">
+      <h1>JEOPARDY!</h1>
+      <p class="score">
+            Player 1 Score: <span class="player-1-score"></span>&nbsp;&nbsp; | &nbsp;&nbsp;
+            Player 2 Score: <span class="player-2-score"></span>
+     
+      </p>
+      <p class="player-turn"></p>
+    </header>
+
+    <!-- container for the board -->
+    <div class="board">
+      <!-- categories get injected here -->
+    </div>
+
+    <!-- invisible container for the card prompt --> 
+    <div class="card-modal">
+      <div class="card-modal-inner">
+        <h2 class="clue-text"><!-- clue gets injected here --></h2>
+        <form autocomplete="off">
+          <input name="user-answer" type="text" />
+          <button type="submit">Answer</button>
+        </form>
+        <div class="result">
+          <p class="result_success">CORRECT</p>
+          <p class="result_fail">INCORRECT</p>
+          <p class="result_correct-answer">
+            The correct answer is <span class="result_correct-answer-text"><!-- answer gets injected here --></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="JS/script.js"></script>
+</body>
+</html>
